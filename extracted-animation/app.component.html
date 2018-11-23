@@ -1,0 +1,8 @@
+<div>
+  <input class="form-control" type="text" #identity (keyup.enter)="setValue(identity)">
+  <div @fade *ngFor="let item of items"  (click)="removeItem(item)">
+    <table>
+      <h2><tr>{{item}}</tr></h2>
+    </table>
+  </div>
+</div>
